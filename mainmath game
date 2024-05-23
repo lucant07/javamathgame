@@ -1,0 +1,106 @@
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.Random;
+public class Main
+{
+    
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int score = 0;
+        int numOfQuestions = 10;
+        System.out.println("Welcome to the Ultimate Math Game!");
+        System.out.println("Thanks for choosing to particpate in the ultimate math game!");
+        System.out.println("There are 4 levels of the Ultimate Math Game: Addition, Subtraction, Multiplication, and Exponents. If you get at least 7 correct answers in each level, you will move on to the next level.");
+             for(int i = 0; i < numOfQuestions; i++)
+    {
+        int num1 = random.nextInt(10) +1;
+        int num2 = random.nextInt(10) +1;
+        int correctAnswer = num1 + num2;
+        System.out.println("\nQuestion " + (i+1) + ": What is " + num1 + " + " + num2 + " ?");
+        int userAnswer = scan.nextInt();
+        if(userAnswer == correctAnswer)
+        {
+            System.out.println("Correct Answer");
+            score++;
+        }
+        else
+        {
+            System.out.println("Incorrect Answer! The correct answer is " + (num1 +num2));
+        }
+    }
+    if(score >= 7)
+    {
+        System.out.println("\nYou passed the addition level.\nNext is the subtraction level.\nYou need at least 7 correct answers out of 10 in order to reach to the next level.\nGood luck!");
+        for(int i = 0; i < numOfQuestions; i++)
+    {
+        int num1 = random.nextInt(10) + 1;
+        int num2 = random.nextInt(10) + 1;
+        int correctAnswer = num1 - num2;
+        System.out.println("\nQuestion " + (i+1) + ": What is " + num1 + " - " + num2 + " ?");
+        int userAnswer = scan.nextInt();
+        if(userAnswer == correctAnswer)
+        {
+            System.out.println("Correct Answer");
+            score++;
+        }
+        else
+        {
+            System.out.println("Incorrect Answer! The correct answer is " + (num1-num2));
+        }
+    }
+    }
+    if(score >= 7)
+    {
+        System.out.println("\nYou passed the subtraction level.\nNext is the multiplication level.\nYou need at least 7 correct answers out of 10 in order to reach to the next level.\nGood luck!");
+        for(int i = 0; i < numOfQuestions; i++)
+    {
+        int num1 = random.nextInt(10) + 1;
+        int num2 = random.nextInt(10) + 1;
+        int correctAnswer = num1 * num2;
+        System.out.println("\nQuestion " + (i+1) + ": What is " + num1 + " * " + num2 + " ?");
+        int userAnswer = scan.nextInt();
+        if(userAnswer == correctAnswer)
+        {
+            System.out.println("Correct Answer");
+            score++;
+        }
+        else
+        {
+            System.out.println("Incorrect Answer! The correct answer is " + (num1*num2));
+        }
+    }
+    }
+        if(score >= 7)
+    {
+        System.out.println("\nYou passed the multiplication level.\nNext is the exponents level.\nYou need at least 7 correct answers out of 10 in order to reach to the next level.\nGood luck!");
+        for(int i = 0; i < numOfQuestions; i++)
+    {
+        int num1 = random.nextInt(5) +1;
+        int num2 = random.nextInt(5) +1;
+        double correctAnswer = Math.pow(num1, num2);
+        System.out.println("\nQuestion " + (i+1) + ": What is " + num1 + " to the power of " + num2 + " ?");
+        int userAnswer = scan.nextInt();
+        if(userAnswer == correctAnswer)
+        {
+            System.out.println("Correct Answer");
+            score++;
+        }
+        else
+        {
+            System.out.println("Incorrect Answer! The correct answer is " + Math.pow(num1,num2));
+        }
+
+    }
+    if(score >= 7)
+    {
+        System.out.println("The Ultimate Math Game has ended! You have succesfully passed the Ultimate Math Game. ");
+    }
+    else
+    {
+        System.out.println("The Ultimate Math Game has ended! You passed 3 levels, but did not pass the final level. Please Try Again!");
+    }
+    }
+}
+}
+
