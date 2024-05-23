@@ -92,15 +92,7 @@ public class Main
         }
 
     }
-    if(score >= 28)
-    {
-        System.out.println("The Ultimate Math Game has ended! You have succesfully passed the Ultimate Math Game! ");
-    }
-    else
-    {
-        System.out.println("The Ultimate Math Game has ended! You passed 3 levels, but did not pass the final level! Please Try Again!");
-    }
-    }
-}
-}
 
+    }
+}
+}
