@@ -50,7 +50,7 @@ public class Main
         }
     }
     }
-    if(score >= 7)
+    if(score >= 14)
     {
         System.out.println("\nYou passed the subtraction level.\nNext is the multiplication level.\nYou need at least 7 correct answers out of 10 in order to reach to the next level.\nGood luck!");
         for(int i = 0; i < numOfQuestions; i++)
@@ -71,7 +71,7 @@ public class Main
         }
     }
     }
-        if(score >= 7)
+        if(score >= 21)
     {
         System.out.println("\nYou passed the multiplication level.\nNext is the exponents level.\nYou need at least 7 correct answers out of 10 in order to reach to the next level.\nGood luck!");
         for(int i = 0; i < numOfQuestions; i++)
@@ -92,7 +92,7 @@ public class Main
         }
 
     }
-    if(score >= 7)
+    if(score >= 28)
     {
         System.out.println("The Ultimate Math Game has ended! You have succesfully passed the Ultimate Math Game! ");
     }
